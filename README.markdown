@@ -1,8 +1,8 @@
-## Errors
+# Errors
 
 A compilation of possibly silly custom Apache error pages to replace those mundane ones that usually show up at the time of epic failure.
 
-### Installation
+## Installation
 
 This is tailored for my Webfaction usage, so the easiest way to use these files would be to throw the below lines into an `.htaccess` file. 
 
