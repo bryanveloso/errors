@@ -1,0 +1,8 @@
+<!--#set var="TITLE" value="Service Temporarily Unavailable" -->
+<!--#include virtual="/errors/ssi/header.html" -->
+<h1>503</h1>
+<h2><!--#echo encoding="none" var="TITLE" --></h2>
+<h3>Abort, Retry, Fail?</h3>
+<p>We were so busy being awesome that the server was unable to service you. This was probably caused by an <strong>overflow</strong> of awesomeness (capacity problems) or <strong>downtime</strong> caused while reparing the awesome.</p>
+<p>Please try again soon, or <a href="mailto:<!--#echo encoding="url" var="SERVER_ADMIN" -->">shoot us a love letter</a> and let us know you saw this.</p>
+<!--#include virtual="/errors/ssi/footer.html" -->
