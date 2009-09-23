@@ -6,8 +6,6 @@ A compilation of possibly silly custom Apache error pages to replace those munda
 
 This is tailored for my Webfaction usage, so the easiest way to use these files would be to throw the below lines into an `.htaccess` file. 
 
-    ErrorDocument 301 /errors/301.html
-    ErrorDocument 302 /errors/302.html
     ErrorDocument 400 /errors/400.html
     ErrorDocument 401 /errors/401.html
     ErrorDocument 403 /errors/403.html
