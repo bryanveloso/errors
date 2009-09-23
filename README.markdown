@@ -22,4 +22,12 @@ This is tailored for my Webfaction usage, so the easiest way to use these files 
     ErrorDocument 504 /errors/504.html
     ErrorDocument 505 /errors/505.html
 
-Should work that way for any shared server environment, although slapping these in your `httpd.conf` might work just as well.
+Should work that way for any shared server environment, although slapping these in your `httpd.conf` might work just as well. 
+
+To make things easier (on me), the error documents use SSI. So you can edit `/errors/ssi/header.html` and `/errors/ssi/footer.html` to suit your needs. There is a CSS file referenced to make the error pages pretty that pulls off of my S3 server, you can choose to use it or replace it with your own.
+
+Finally, there is an `.htaccess` file that sits at the root of _this_ directory. In it, you should change the following from the defaults I have in place:
+    
+    SetEnv TZ America/Los_Angeles
+    SetEnv SERVER_ADMIN servers@revyver.com
+    

@@ -1,0 +1,16 @@
+# This .htaccess file controls the error documents themselves.
+# All of this is credited to <http://www.askapache.com/htaccess/advanced-htaccess-ssi.html>
+
+# Turn on symlinks for rewrites and turn off SSI's ability to exec.
+Options None
+Options SymLinksIfOwnerMatch IncludesNOEXEC
+
+# Make files ending in .html be filtered through the INCLUDES filter before being sent to the client.
+AddOutputFilter Includes html
+
+# This internal Apache variable prevents your error documents from allowing keep-alive connections.
+SetEnv nokeepalive
+
+# These are used to determine the time and for SSI output.
+SetEnv TZ America/Los_Angeles
+SetEnv SERVER_ADMIN servers@revyver.com
